@@ -1,5 +1,8 @@
 package benchem_test
 
+// Some say, iterating over small arrays is faster than hash table lookups
+// Let's find the inflexion point for Go Maps
+
 import (
 	"fmt"
 	"math/rand"
@@ -8,7 +11,7 @@ import (
 )
 
 const (
-	N = 2
+	N = 2 // The smallest no. of elements for which map lookup is faster than array iteration
 )
 
 type E struct {

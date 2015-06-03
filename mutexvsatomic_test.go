@@ -1,5 +1,9 @@
 package benchem_test
 
+// sync.Mutex, sync.RWMutex, sync/atomic.* -- oh, the choices
+// Which method of synchronising data access might be fastest?
+// Hint: see mux handler listing in net/http
+
 import (
 	"sync"
 	"sync/atomic"
